@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+</head>
+
+<body>
+    <h1>Create Comment</h1>
+    {{!-- post request - on post goes to /api/comment --}}
+    {{!-- we would never write /api/createcomment --}}
+    {{!-- apis revolve around resources --}}
+    <form action="/api/comment" method="post">
+        <input type="text" name = "post" placeholder="Post">
+        <input type="text" name = "text" placeholder="Text">
+        <input type="submit" value = "Create Comment" placeholder="submit">
+    </form>
+    <h1>Create Profile</h1>
+    <form action="/api/profile" method="post">
+        <input type="text" name = "username" placeholder="Username">
+        <input type="password" name = "password" placeholder="password">
+        <input type="submit" value = "Create Profile" placeholder="submit">
+    </form>
+    <h1>Create Post</h1>
+    <form action="/api/post" method="post">
+        <input type="text" name = "image" placeholder="Post">
+        <input type="text" name = "caption" placeholder="Caption">
+        <input type="submit" value = "Create Profile" placeholder="submit">
+    </form>
+</body>
+</html>
+
+
